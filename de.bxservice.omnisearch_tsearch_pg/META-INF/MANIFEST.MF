@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Omnisearch
 Bundle-SymbolicName: de.bxservice.omnisearch_tsearch_pg;singleton:=true
 Bundle-Version: 1.0.2.qualifier
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version>=8))"
 Require-Bundle: org.adempiere.base;bundle-version="4.1.0",
  org.adempiere.plugin.utils;bundle-version="4.1.0",
  de.bxservice.omnisearch;bundle-version="1.0.0",
@@ -14,3 +14,4 @@ Import-Package: org.compiere.model
 Bundle-ActivationPolicy: lazy
 Export-Package: de.bxservice.omniimpl
 Automatic-Module-Name: de.bxservice.omnisearch_tsearch_pg
+Bundle-ClassPath: .
